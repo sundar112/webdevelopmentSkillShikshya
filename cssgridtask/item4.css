@@ -1,0 +1,101 @@
+/***********8 itm4css*********88 */
+#itm4 {
+    background-color: #1b7a84;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    overflow: hidden;
+}
+
+.chart {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    width: 200px;
+    height: 100px;
+    padding: 20px 0 4px 20px;
+}
+
+.arrow {
+    padding-left: 40px;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+.bar {
+    width: 50px;
+    background-color: aliceblue;
+    border-radius: 5%;
+}
+
+.bar1 {
+    height: 75px;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+.bar2 {
+    height: 70px;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+.bar3 {
+    height: 80px;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+.bar4 {
+    height: 60px;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+.bar5 {
+    height: 65px;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+.itm4text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+    color: #eaf2ff;
+    font-size: large;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+#itm4:hover .bar1 {
+    transform: scaleY(1.5);
+}
+
+#itm4:hover .bar2 {
+    height: 70%;
+}
+
+#itm4:hover .bar3 {
+    transform: scaleY(1.5);
+}
+
+#itm4:hover .bar4 {
+    height: 70%;
+}
+
+#itm4:hover .bar5 {
+    transform: scaleY(1.5);
+}
+
+#itm4:hover .arrow {
+    transform-origin: top;
+    transform: rotate(-30deg);
+}
+
+#itm4:hover .itm4text {
+    transform: translateY(-15px);
+}

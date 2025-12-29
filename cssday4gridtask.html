@@ -1,0 +1,213 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./cssgridtask/item1.css" />
+		<link rel="stylesheet" href="./cssgridtask/item4.css" />
+		<link rel="stylesheet" href="./cssgridtask/item2.css" />
+		<link rel="stylesheet" href="./cssgridtask/item3.css" />
+		<link rel="stylesheet" href="./cssgridtask/item5.css" />
+		<style>
+			.container {
+				display: grid;
+				grid-template-columns: repeat(1fr);
+				grid-template-rows: repeat(4, 200px);
+				gap: 15px;
+				max-width: 1000px;
+				margin: auto;
+				padding: 0 150px;
+			}
+
+			.items {
+				background-color: lightgreen;
+				width: 300px;
+				border-radius: 15px;
+				padding: 15px;
+				display: flex;
+				/* align-items: center; */
+				justify-content: space-between;
+			}
+
+			#itm6 {
+				background-color: #3b5b85;
+				grid-column: 3;
+				grid-row: 3 / span 2;
+				display: flex;
+				flex-direction: column;
+				overflow: hidden;
+				padding: 0% !important;
+				width: 330px;
+				transform: 0.5s;
+				transition-timing-function: linear;
+			}
+			.itm6text {
+				padding: 15px;
+			}
+			ul {
+				margin: 0%;
+				padding: 0%;
+				transform: 0.5s;
+				transition-timing-function: linear;
+			}
+			li {
+				list-style-type: none;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				gap: 8px;
+				padding-left: 15px;
+				background-color: #e8f6ec;
+				margin-top: 2px;
+			}
+			li p {
+				margin: 2%;
+				padding: 5%;
+			}
+			li span {
+				height: 10px;
+				width: 10px;
+				border: 0.5px solid rgb(188, 185, 185);
+				border-radius: 2px;
+				transform: 0.5s;
+				transition-timing-function: linear;
+			}
+
+			.nameList {
+				background-color: #e8edea;
+				margin-top: 50px;
+				margin-left: 100px;
+				border-top-left-radius: 15px;
+				transform: 0.5s;
+				transition-timing-function: linear;
+				transition: all 0.3s ease;
+				height: 300px;
+				width: 300px;
+			}
+			.emp {
+				padding-left: 25px;
+				color: 20202099;
+			}
+			#itm6:hover .nameList {
+				margin-left: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="items forpdng" id="itm1">
+				<div class="itm1txt">
+					<span>INTENS TEAMS</span>
+					<p class="headText">Where Accountability Meets Efficiency</p>
+					<p class="normalText">
+						Intense Team provides the tools you need to ensure work gets done
+						efficiently, transparently, and collaboratively
+					</p>
+				</div>
+
+				<div class="itm1img">
+					<img src="./assets/HowHelp.1299de98.svg" alt="" />
+				</div>
+			</div>
+			<div class="items" id="itm2">
+				<p>Real Time Monitoring</p>
+
+				<div class="icons">
+					<img class="spark" src="./assets/Hand-Elements.svg" alt="" />
+					<img class="hand" src="./assets/Hand-Fram.svg" alt="" />
+				</div>
+			</div>
+			<div class="items" id="itm3">
+				<div class="itm3text">
+					<p style="color: #09441f; margin-bottom: 10px" class="headText">
+						Customizable Dashboards:
+					</p>
+					<p style="color: #0c4f23; margin: 0%" class="normalText">
+						Intense Team provides the tools you need and is customizable.
+					</p>
+				</div>
+				<div class="itm3icons">
+					<img class="clock" src="./assets/clock-rewind.svg" alt="" />
+					<img class="calender" src="./assets/calendar-minus-01.svg" alt="" />
+					<img class="home" src="./assets/home-04.svg" alt="" />
+				</div>
+			</div>
+			<div class="items" id="itm4">
+				<div class="itm4text">
+					<div style="width: 200px">
+						<p style="font-size: 28px">Inactivity Alerts</p>
+					</div>
+					<div class="arrow" style="margin-top: 40px">
+						<img src="./assets/arrow.svg" alt="Description of the image" />
+					</div>
+				</div>
+				<div class="chart">
+					<div class="bar bar1"></div>
+					<div class="bar bar2"></div>
+					<div class="bar bar3"></div>
+					<div class="bar bar4"></div>
+					<div class="bar bar5"></div>
+				</div>
+			</div>
+			<div class="items" id="itm5">
+				<div class="itm5text">
+					<p class="headText">Performance Analytics:</p>
+					<p class="normalText">Track productivity and performance</p>
+					<p>with actionable insights</p>
+				</div>
+				<div class="itm5box">
+					<div class="box">
+						<img src="./assets/laptop-01.svg" alt="" />
+						<p class="activeTime">Active time</p>
+						<p class="time">6hrs.20min.</p>
+					</div>
+					<div class="box">
+						<img src="./assets/lightbulb-05.svg" alt="" />
+						<p class="activeTime">Active time</p>
+						<p class="time">6hrs.20min.</p>
+					</div>
+					<div class="box">
+						<img src="./assets/laptop-01.svg" alt="" />
+						<p class="activeTime">Active time</p>
+						<p class="time">6hrs.20min.</p>
+					</div>
+					<div class="box">
+						<img src="./assets/lightbulb-05.svg" alt="" />
+						<p class="activeTime">Active time</p>
+						<p class="time">6hrs.20min.</p>
+					</div>
+				</div>
+			</div>
+			<div class="items" id="itm6">
+				<div class="itm6text">
+					<p style="color: white; margin: 0%" class="headText">
+						Appraise your team
+					</p>
+					<p style="color: white; margin: 0%" class="normalText">
+						Track productivity and performance with actionable insights.
+					</p>
+				</div>
+				<div class="nameList">
+					<p class="emp">Employee</p>
+					<ul>
+						<li>
+							<span></span>
+							<p>Dipak Giri</p>
+						</li>
+						<li>
+							<span></span>
+							<p>Jim Khadgi</p>
+						</li>
+						<li>
+							<span></span>
+							<p>Ahila Sharma</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

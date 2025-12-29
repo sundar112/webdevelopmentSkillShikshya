@@ -1,0 +1,55 @@
+/*************** itm 5 css************** */
+#itm5 {
+    background-color: #eaf2ff;
+    grid-column: 2;
+    grid-row: 3 / span 2;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.itm5text {}
+
+.itm5text .headText {
+    font-size: 28px;
+    color: #09441f;
+    margin: 0px;
+}
+
+.itm5text .normalText {
+    margin: 0;
+    font-size: 18px;
+    color: #363636;
+}
+
+.itm5box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+.box {
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.box * {
+    padding: 0%;
+    margin: 0%;
+}
+
+.activeTime {
+    font-size: 14px;
+}
+
+.time {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#itm5:hover .itm5box {
+    transform: translateX(-300px);
+}

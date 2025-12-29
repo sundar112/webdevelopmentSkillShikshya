@@ -1,0 +1,38 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<title>Document</title>
+	</head>
+	<body
+		class="min-h-screen flex flex-col items-center justify-center bg-gray-900">
+		<p class="text-3xl text-white">Guess the correct number</p>
+		<div
+			class="bg-white p-4 rounded-lg shadow-md w-full max-w-sm flex justify-between gap-4">
+			<input
+				id="num"
+				type="number"
+				class="border-2 w-2xl border-blue-500 rounded" />
+			<button id="checkbtn" class="bg-blue-500 p-2 rounded text-white">
+				guess
+			</button>
+		</div>
+
+		<div class="text-white w-full max-w-sm">
+			<ul id="guessedNUms" class="flex justify-start gap-3"></ul>
+			<p id="feedback"></p>
+			<p id="feedbackDec"></p>
+		</div>
+		<div>
+			<p id="gameover" class="text-yellow-600 text-3xl" hidden>Game Over!</p>
+			<button id="playagain" hidden class="bg-blue-500 p-2 rounded text-white">
+				play again
+			</button>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

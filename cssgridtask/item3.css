@@ -1,0 +1,58 @@
+#itm3 {
+    background-color: #e7fced;
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.itm3icons * {
+    position: relative;
+}
+
+.clock {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    bottom: 130px;
+    left: 5px;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+.calender {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    bottom: 100px;
+    left: 70px;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+.home {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    bottom: 70px;
+    left: 120px;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+#itm3:hover .clock {
+    transform-origin: center bottom;
+    transform: rotate(-30deg);
+    transition-property: transform;
+}
+
+#itm3:hover .home {
+    transform-origin: center bottom;
+    transform: rotate(30deg);
+    transition-property: transform;
+}
+
+#itm3:hover .calender {
+    transform: scale(1.2);
+    transition-property: transform;
+}

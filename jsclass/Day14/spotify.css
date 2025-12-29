@@ -1,0 +1,34 @@
+.box {
+
+    background-color: #232323;
+    margin: 0.75rem 0;
+    padding: 0.25rem 0.8rem 0.75rem 0.8rem;
+    border-radius: 0.75rem;
+    height: fit-content;
+}
+
+.box_p1 {
+    font-size: 1rem;
+    font-weight: 700;
+    opacity: 0.95;
+    padding: 10px 0 10px 0 ;
+}
+
+.box_p2 {
+    font-size: 0.85;
+    opacity: 0.9;
+    padding: 10px 0 10px 0 ;
+}
+
+.badge {
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 400;
+    opacity: 0.95;
+    margin-top: 0.5rem;
+    height: 1.8rem;
+    width: fit-content;
+    color: black;
+}

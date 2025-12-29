@@ -1,0 +1,46 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="input.css" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+			integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+	</head>
+	<body
+		class="min-h-screen flex flex-col items-center justify-center bg-gray-900">
+		<div class="bg-white p-6 rounded-lg shadow-md w-full max-w-sm">
+			<h2 class="text-2xl font-semibold text-center mb-4">Todo List</h2>
+
+			<!-- todolist input from hear -->
+			<div class="flex gap-2">
+				<input
+					id="todoInput"
+					type="text"
+					value="test"
+					placeholder="Enter a new task"
+					class="flex-1 px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+				<button
+					id="addTodo"
+					class="bg-blue-600 text-white px-4 rounded cursor-pointer hover:bg-blue-700 transition">
+					Add
+				</button>
+			</div>
+		</div>
+		<!----------------------- Todo list from hear ----------------------->
+		<div class="bg-white p-6 rounded-lg shadow-md w-full max-w-sm mt-3">
+			<ul id="todoList" class="mt-4 space-y-2"></ul>
+		</div>
+
+		<script src="todolist.js"></script>
+	</body>
+</html>
