@@ -2,12 +2,14 @@
 
 import React, { useState } from 'react';
 
-function CountBtn() {
+function CountBtn(props) {
 	const [count, setCount] = useState(0);
+	console.log(props);
+
 	return (
 		<>
-			<button onClick={() => setCount((count) => count + 1)}>
-				count is {count}
+			<button onClick={() => props.fn()}>
+				{props.name} {props.count}
 			</button>
 		</>
 	);
