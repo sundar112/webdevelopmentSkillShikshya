@@ -82,7 +82,8 @@
 						<i class="fa-regular fa-user border p-1.5 rounded-4xl"></i>
 					</div>
 				</div>
-				<h2 class="text-4xl font">Recently Played</h2>
+
+				<h2 class="text-4xl font">New Released</h2>
 
 				<div
 					id="albumContainer"
@@ -92,15 +93,78 @@
 				<template id="albumTemplate">
 					<div class="bg-gray-900 rounded-lg p-3 hover:bg-gray-800 transition">
 						<img class="w-full h-40 object-cover rounded-md mb-3" />
-						<h2 class="font-semibold text-sm truncate"></h2>
-						<p class="text-xs text-gray-400"></p>
-						<span
-							class="inline-block mt-2 text-xs px-2 py-1 rounded bg-green-600">
-						</span>
+						<div class="flex justify-between">
+							<div class="overflow-auto flex-1 min-w-0">
+								<h2 class="font-semibold text-sm truncate"></h2>
+								<p class="text-xs text-gray-400"></p>
+							</div>
+							<button
+								class="w-9 h-9 flex items-center justify-center rounded-full bg-green-500 hover:bg-green-400 transition">
+								▶
+							</button>
+						</div>
+					</div>
+				</template>
+
+				<h2 class="text-4xl font mt-10">Recently Played</h2>
+				<div
+					id="albumContainer2"
+					class="grid grid-cols-2 md:grid-cols-4 gap-6"></div>
+				<template id="albumTemplate">
+					<div class="bg-gray-900 rounded-lg p-3 hover:bg-gray-800 transition">
+						<img class="w-full h-40 object-cover rounded-md mb-3" />
+						<div class="flex justify-between">
+							<div class="overflow-auto flex-1 min-w-0">
+								<h2 class="font-semibold text-sm truncate"></h2>
+								<p class="text-xs text-gray-400"></p>
+							</div>
+							<button
+								class=" playbtn w-9 h-9 flex items-center justify-center rounded-full bg-green-500 hover:bg-green-400 transition">
+								▶
+							</button>
+						</div>
 					</div>
 				</template>
 			</div>
 		</div>
+		<div class="music_player">
+        <div class="album">
+          <div class="album_content">
+            <img src="./assets/card2img.jpeg" class="album_img">
+            <div class="song_info">
+              <a class="album_title">Sarangi</a>
+              <a class="album_info">Susant KC</a>
+            </div>
+            </i><i class="fa-solid fa-circle-plus icons"></i>
+          </div>
+        </div>
+        <div class="player">
+            <div class="player_controls">
+                <img src="./assets/player_icon1.png" class="player_control_icon">
+                <img src="./assets/player_icon2.png" class="player_control_icon">
+                <img src="./assets/player_icon3.png" id="playBtn" class=" playbtn player_control_icon play_icon">
+                <img src="./assets/player_icon4.png" class="player_control_icon">
+                <img src="./assets/player_icon5.png" class="player_control_icon">
+            </div>
+            <div class="playback_bar">
+                <!-- <span class="curr_time">00:00</span> -->
+				 <span class="curr_time" id="currentTime">00:00</span>
+                <input type="range"
+       min="0"
+       max="100"
+       value="0"
+       class="progress_bar"
+       id="progressBar">
+                
+<span class="tot_time" id="totalTime">00:00</span>
+            </div>
+        </div>
+        <div class="control">
+          
+        </div>
+      </div>
+
 		<script src="spotify.js"></script>
+		<script src="player.js"></script>
 	</body>
 </html>

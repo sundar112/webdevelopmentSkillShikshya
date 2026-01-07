@@ -1,6 +1,7 @@
 /** @format */
 
 const container = document.getElementById('albumContainer');
+const container2 = document.getElementById('albumContainer2');
 const template = document.getElementById('albumTemplate');
 
 async function getAccessToken() {
@@ -25,7 +26,7 @@ async function fetchAlbums() {
 		const token = await getAccessToken();
 
 		const response = await fetch(
-			'https://api.spotify.com/v1/browse/new-releases?limit=10',
+			'https://api.spotify.com/v1/browse/new-releases?limit=8',
 			{
 				headers: {
 					Authorization: `Bearer ${token}`,
@@ -45,25 +46,27 @@ fetchAlbums();
 
 function renderAlbums(albums) {
 	container.innerHTML = '';
+	container2.innerHTML = '';
 
 	albums.forEach((album) => {
-		const clone = template.content.cloneNode(true);
+		// Clone for container 1
+		const clone1 = template.content.cloneNode(true);
+		fillCard(clone1, album);
+		container.appendChild(clone1);
 
-		const img = clone.querySelector('img');
-		const title = clone.querySelector('h2');
-		const artist = clone.querySelector('p');
-		const type = clone.querySelector('span');
-
-		img.src = album.images[0].url;
-		title.textContent = album.name;
-		artist.textContent = album.artists[0].name;
-		type.textContent = album.album_type.toUpperCase();
-
-		// Style based on album type
-		if (album.album_type === 'single') {
-			type.classList.add('bg-blue-600');
-		}
-
-		container.appendChild(clone);
+		// Clone for container 2
+		const clone2 = template.content.cloneNode(true);
+		fillCard(clone2, album);
+		container2.appendChild(clone2);
 	});
+}
+
+function fillCard(clone, album) {
+	const img = clone.querySelector('img');
+	const title = clone.querySelector('h2');
+	const artist = clone.querySelector('p');
+
+	img.src = album.images[0].url;
+	title.textContent = album.name;
+	artist.textContent = album.artists[0].name;
 }

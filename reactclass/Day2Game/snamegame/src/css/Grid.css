@@ -1,0 +1,26 @@
+.board {
+    display: grid;
+
+    width: 400px;
+    height: 400px;
+    border: 2px solid #444;
+}
+
+.cell {
+    border: 1px solid #222;
+    background-color: #1e1e1e;
+}
+
+.snake {
+    background-color: limegreen;
+}
+
+.game-over {
+    color: red;
+    font-size: 24px;
+    margin-top: 12px;
+}
+
+.food {
+    background-color: red;
+}
