@@ -12,6 +12,8 @@ import {
 } from 'react-router';
 import Layout from './components/Layout';
 import Card from './components/Card';
+import FormUnControlled from './components/FormUnControlled';
+import FormControll from './components/FormControll';
 
 const router = createBrowserRouter([
 	{
@@ -33,6 +35,8 @@ const router = createBrowserRouter([
 function App() {
 	return (
 		<>
+			<FormControll />
+			<FormUnControlled />
 			<RouterProvider router={router} />
 		</>
 	);
